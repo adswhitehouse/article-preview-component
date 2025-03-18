@@ -1,0 +1,157 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Variables */
+:root {
+  /* Font */
+  --ff-primary: "Manrope", sans-serif;
+
+  /* Colors */
+  --white: #fff;
+  --grey-1: #48556a;
+  --grey-2: #6e8098;
+  --grey-3: #9daec2;
+  --grey-4: #ecf2f8;
+
+  /* Font Size */
+  --fs-1: 1.25rem;
+  --fs-2: 0.813rem;
+
+  /* Font Weights */
+  --fw-1: 700;
+  --fw-2: 500;
+  --fw-3: 400;
+
+  /* Line Heights */
+  --lh-1: 140%;
+  --lh-2: 130%;
+
+  /* Letter Spacings */
+  --ls-1: 25%;
+  --ls-2: 0.25px;
+  --ls-3: 0.12%;
+}
+
+/* Utility Classes */
+/* Font */
+.ff-primary {
+  font-family: var(--ff-primary);
+}
+
+/* Colors */
+.white {
+  color: var(--white);
+}
+
+.grey-1 {
+  color: var(--grey-1);
+}
+
+.grey-2 {
+  color: var(--grey-2);
+}
+
+.grey-3 {
+  color: var(--grey-3);
+}
+
+/* Background Colors */
+.white-bg {
+  background-color: var(--white);
+}
+
+.grey-1-bg {
+  background-color: var(--grey-1);
+}
+
+.grey-4-bg {
+  background-color: var(--grey-4);
+}
+
+/* Text Presets */
+.tp-1 {
+  font-size: var(--fs-1);
+  font-weight: var(--fw-1);
+  line-height: var(--lh-2);
+  letter-spacing: var(--ls-2);
+}
+
+.tp-2 {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-2);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-3);
+}
+
+.tp-3 {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-1);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-3);
+}
+
+.tp-4 {
+  font-size: var(--fs-2);
+  font-weight: var(--fw-3);
+  line-height: var(--lh-1);
+  letter-spacing: var(--ls-1);
+}
